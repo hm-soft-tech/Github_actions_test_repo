@@ -1,9 +1,12 @@
 package com.example.mks.github_actions_with_test
 
+import android.annotation.SuppressLint
+
 class Utils {
 
 
-  fun addition(a:Int,b:Int):Boolean{
+  @SuppressLint("SuspiciousIndentation")
+  fun addition(a:Int, b:Int):Boolean{
     val  sum  = a + b
       if (sum > 40)
       {
@@ -12,8 +15,22 @@ class Utils {
       else{
           return false
       }
-
   }
+
+  @SuppressLint("SuspiciousIndentation")
+  fun subtraction(a:Int, b:Int):Boolean{
+    val  sub  = a + b
+    if (sub > 40)
+    {
+      return true
+    }
+    else{
+      return false
+    }
+  }
+
+
+
 
 
 }
