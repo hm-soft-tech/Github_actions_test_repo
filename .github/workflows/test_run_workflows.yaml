@@ -12,7 +12,7 @@ jobs:
   test-feature:
     runs-on: macOS-latest
 
-    needs: build
+
 
     steps:
       - name: checkout code
