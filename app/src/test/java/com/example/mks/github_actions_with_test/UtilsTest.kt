@@ -19,8 +19,8 @@ class UtilsTest {
     @Test
     fun checksum(){
         test  = Utils()
-    val result =  test.addition(2,7)
-     Assert.assertFalse(result)
+        val result =  test.addition(2,7)
+       Assert.assertFalse(result)
 
     // Assert.assertEquals(true,true)
 

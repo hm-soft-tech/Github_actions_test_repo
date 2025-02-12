@@ -29,6 +29,18 @@ jobs:
       - name: run test with gradle
         run : ./gradlew test
 
+      - name : build the apk
+        run: ./gradlew build
+
+      - name: upload artifact
+        uses: actions/upload-artifact@4.3.6
+
+        with:
+          name: one.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+
+
+
 
 
 
